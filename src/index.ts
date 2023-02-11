@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from "axios";
 
 export const createHttpClient = (
   baseURL: string,
-  getAccessToken?: () => string,
+  getAccessToken?: () => string | undefined,
 ): AxiosInstance => {
   const httpClient = axios.create({
     baseURL,
